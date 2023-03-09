@@ -76,11 +76,11 @@ function App(): JSX.Element {
 
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000); // simulate a 3-second loading time
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 3000); // simulate a 3-second loading time
+  // }, []);
 
   if (loading) {
     return <SplashScreen />;

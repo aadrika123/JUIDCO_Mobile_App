@@ -4,12 +4,12 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 function SplashScreen() {
     return (
         <View style={styles.container}>
-            {/* <View style={styles.imageContainer}>
-                <Image style={styles.headerImg} source={require('../assets/media/globe.png')} />
-            </View> */}
+            <View style={styles.imageContainer}>
+                <Image style={styles.headerImg} source={require('../assets/media/box.png')} />
+            </View>
             <View style={styles.welcomeContainer}>
-                <Text style={styles.welcomeText}>Mange your tax the best way</Text>
-                <Text style={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit a at consectetur repellat animi.</Text>
+                <Text style={styles.welcomeText}>Mange your taxes</Text>
+                <Text style={styles.desc}>You can easily manage all your taxes with ease of access. Forget all your efforts and enjoy all services at your home.</Text>
                 <Text style={styles.loadingText}>Loding..</Text>
             </View>
         </View>
@@ -28,17 +28,20 @@ const styles = StyleSheet.create({
     },
     imageContainer: {
         width: 400,
-        padding:40
+        padding:40,
+        justifyContent:'center',
+        alignItems:'center'
     },
 
     headerImg: {
-        width: 400,
+        width: 200,
+        height:200,
         position: 'absolute',
     },
     
    
     welcomeContainer: {
-        marginTop: 40,
+        marginTop: 50,
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -48,11 +51,11 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
         textAlign: 'center',
-        lineHeight:50
+        lineHeight:50,
 
     },
     desc: {
-        marginTop:20,
+        marginTop:10,
         width: '80%',
         fontSize: 20,
         color: 'white',
